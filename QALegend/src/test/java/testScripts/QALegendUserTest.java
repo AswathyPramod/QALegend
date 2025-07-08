@@ -37,9 +37,8 @@ public class QALegendUserTest extends BaseClass{
 		clientPage.clickOnEditButton(newPhoneNumber);
 		String name=clientPage.getCompanyCellValue();
 		softAssert.assertEquals(name,prop.getProperty("companyName"));
-		softAssert.assertAll();
 		System.out.println(name);
-		
+		softAssert.assertAll();
 	}
 	@Test
 	public void deleteClient() {
@@ -68,6 +67,8 @@ public class QALegendUserTest extends BaseClass{
 		dashboard.clickOnInvoiceOptionButton();
 		int value= FakerUtility.getRandomNumber();
 		invoicePage.addingPayment(value);
+	    String exp=prop.getProperty("payment");
+		Assert.assertEquals(value,exp);
 	}
 	@Test
 	public void deleteInvoice() throws InterruptedException { 
@@ -75,6 +76,7 @@ public class QALegendUserTest extends BaseClass{
 		dashboard.clickOnInvoiceOptionButton();
 		invoicePage.createInvoice();
 		invoicePage.deletingInvoice();
+		
 	}
 	@Test
 	public void deletePayment() {
