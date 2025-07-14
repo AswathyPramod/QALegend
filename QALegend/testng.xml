@@ -9,42 +9,42 @@
 	<test thread-count="5" name="Test">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<!-- <class name="testScripts.QALegendUserTest">
+			<class name="testScripts.QALegendUserTest">
       
-      <methods>-->
-			<!--<include name="addClient"></include>-->
-			<!--<include name="editClient"></include>-->
-			<!--<include name="deleteClient"></include>-->
-			<!--
+      <methods>
+			<include name="addClient"></include>
+			<include name="editClient"></include>
+			<include name="deleteClient"></include>
+			
       </methods>
-      </class>-->
-			<!-- <class name="testScripts.QALegendItemsTest">
+      </class>
+			<class name="testScripts.QALegendItemsTest">
       
-      <methods>-->
-			<!--<include name="addItems"></include>-->
-			<!--<include name="deleteItems"></include>-->
-			<!--<include name="deleteClient"></include>-->
-			<!--
+      <methods>
+			<include name="addItems"></include>
+			<include name="deleteItems"></include>
+			<include name="deleteClient"></include>
+			
       </methods>
-      </class>-->
+      </class>
 			<class name="testScripts.QALegendInvoiceTest">
 				<methods>
 					<include name="addInvoice"></include>
-					<!--<include name="addPayment"></include>-->
+					<include name="addPayment"></include>
 				</methods>
 			</class>
-			<!-- <class name="testScripts.QALegendAllProjectsTest">
+			<class name="testScripts.QALegendAllProjectsTest">
       
-      <methods>-->
-			<!--<include name="addProject"></include>-->
-			<!--<include name="deleteProject"></include>-->
-			<!--<include name="editingProject"></include>-->
-			<!--
+      <methods>
+			<include name="addProject"></include>
+			<include name="deleteProject"></include>
+			<include name="editingProject"></include>
+			
       </methods>
-      </class>-->
+      </class>
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test> 
+	
+</suite> 
+ 
 
