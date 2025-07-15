@@ -1,0 +1,6 @@
+package constants;
+
+public class Constant {
+	public static final long EXPLICIT_WAIT = 50;
+	public static final String CLIENTDATAEXCELFILEPATH = "\\src\\main\\resources\\testData\\ClientData.xlsx";
+}
